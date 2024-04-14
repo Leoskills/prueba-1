@@ -1,0 +1,11 @@
+<ion-list>
+    <ion-item>
+       
+        <ion-img  src="https://aprendeencasa.sep.gob.mx/multimedia/B64images/202112/B64-IMG-kYyoUVKPni-XgpGv1carz.png" width="10" height="10"></ion-img>
+        <ion-input [(ngModel)]="radio1str"  type="number" label="Radio (cm)" label-placement="floating" fill="solid" placeholder="ingresa un numero"></ion-input>    
+        <ion-button (click)="CalcularPerimetro()" >Calcular Perimetro</ion-button>
+    </ion-item>
+    <ion-item>
+      {{ resultado }}
+    </ion-item>
+</ion-list>

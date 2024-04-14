@@ -1,0 +1,13 @@
+<ion-list>
+    <ion-item>
+       
+        <ion-img  src="https://cdn0.unprofesor.com/es/posts/5/3/0/como_sacar_el_perimetro_de_un_triangulo_escaleno_6035_orig.jpg" width="10" height="10"></ion-img>
+        <ion-input [(ngModel)]="ladoAstr" label="Lado A (cm)" type="number" label-placement="floating" fill="solid" placeholder="ingresa un numero"></ion-input>    
+        <ion-input [(ngModel)]="ladoBstr" label="Lado B (cm)" type="number" label-placement="floating" fill="solid" placeholder="ingresa un numero"></ion-input>    
+        <ion-input [(ngModel)]="LadoCstr" label="Lado C (cm)" type="number" label-placement="floating" fill="solid" placeholder="ingresa un numero"></ion-input>    
+        <ion-button (click)="CalcularPerimetroTriangulo()">Calcular Perimetro</ion-button>
+    </ion-item>
+    <ion-item>
+      {{ resultado }}
+    </ion-item>
+  </ion-list>
